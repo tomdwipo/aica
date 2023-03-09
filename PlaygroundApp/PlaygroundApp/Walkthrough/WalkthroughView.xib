@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="ALy-7Z-na0">
+            <view key="view" contentMode="scaleToFill" id="7dN-v1-7Ou">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-walkthrough" translatesAutoresizingMaskIntoConstraints="NO" id="ddF-fK-HTO">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="219"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="QLs-Ik-SDh"/>
+                            <constraint firstAttribute="height" constant="219" id="Uo5-Ej-F8U"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELAMAT DATANG" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MP-Us-8ed">
+                        <rect key="frame" x="126.5" y="177.5" width="161.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan login untuk memulai aplikasi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqj-ph-VmQ">
+                        <rect key="frame" x="129.5" y="219" width="155" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="155" id="A1H-16-0QF"/>
+                            <constraint firstAttribute="height" constant="56" id="qjC-0E-jqL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-logo-green" translatesAutoresizingMaskIntoConstraints="NO" id="3g0-fC-xkA">
+                        <rect key="frame" x="99" y="370" width="216" height="156"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="216" id="4Tw-se-tnS"/>
+                            <constraint firstAttribute="height" constant="156" id="klM-Z0-god"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlY-Q1-BBX">
+                        <rect key="frame" x="57.5" y="785" width="299" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="QrE-ej-96o"/>
+                            <constraint firstAttribute="width" constant="299" id="khH-9x-zxF"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" subtitle="" cornerStyle="medium">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Login">
+                                    <attributes>
+                                        <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <color key="baseBackgroundColor" red="1" green="0.72156862745098038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </buttonConfiguration>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuju-logo-green" translatesAutoresizingMaskIntoConstraints="NO" id="rX7-ux-xxg">
+                        <rect key="frame" x="122.5" y="546" width="169" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="J4b-iX-8KU"/>
+                            <constraint firstAttribute="width" constant="169" id="S9Z-SZ-eoF"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="jTJ-vg-J5E"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="3g0-fC-xkA" firstAttribute="centerX" secondItem="7dN-v1-7Ou" secondAttribute="centerX" id="506-Ws-NJY"/>
+                    <constraint firstItem="cqj-ph-VmQ" firstAttribute="top" secondItem="1MP-Us-8ed" secondAttribute="bottom" constant="20" id="9KK-gm-G9W"/>
+                    <constraint firstItem="ddF-fK-HTO" firstAttribute="leading" secondItem="jTJ-vg-J5E" secondAttribute="leading" id="CE1-Bi-E8A"/>
+                    <constraint firstItem="rlY-Q1-BBX" firstAttribute="centerX" secondItem="7dN-v1-7Ou" secondAttribute="centerX" id="Dss-IM-wpx"/>
+                    <constraint firstItem="cqj-ph-VmQ" firstAttribute="centerX" secondItem="7dN-v1-7Ou" secondAttribute="centerX" id="UoF-6n-wFE"/>
+                    <constraint firstItem="3g0-fC-xkA" firstAttribute="top" secondItem="cqj-ph-VmQ" secondAttribute="bottom" constant="95" id="WUP-su-4GQ"/>
+                    <constraint firstItem="rX7-ux-xxg" firstAttribute="centerX" secondItem="7dN-v1-7Ou" secondAttribute="centerX" id="bd0-jm-Cqw"/>
+                    <constraint firstItem="3g0-fC-xkA" firstAttribute="centerY" secondItem="7dN-v1-7Ou" secondAttribute="centerY" id="d2A-Yz-1l2"/>
+                    <constraint firstItem="3g0-fC-xkA" firstAttribute="centerX" secondItem="7dN-v1-7Ou" secondAttribute="centerX" id="dyi-oy-Uad"/>
+                    <constraint firstItem="1MP-Us-8ed" firstAttribute="centerX" secondItem="7dN-v1-7Ou" secondAttribute="centerX" id="gEb-nD-4LJ"/>
+                    <constraint firstItem="ddF-fK-HTO" firstAttribute="top" secondItem="7dN-v1-7Ou" secondAttribute="top" id="hCt-ML-Nv3"/>
+                    <constraint firstItem="rX7-ux-xxg" firstAttribute="top" secondItem="3g0-fC-xkA" secondAttribute="bottom" constant="20" id="rad-w8-DeI"/>
+                    <constraint firstItem="jTJ-vg-J5E" firstAttribute="bottom" secondItem="rlY-Q1-BBX" secondAttribute="bottom" constant="36" id="tmr-i3-AyW"/>
+                </constraints>
+            </view>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-30" y="-121"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="app-logo-green" width="216" height="156.5"/>
+        <image name="image-walkthrough" width="115" height="219"/>
+        <image name="tuju-logo-green" width="169" height="54"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
