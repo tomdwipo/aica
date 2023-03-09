@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="SyK-xv-2dv">
+            <view key="view" contentMode="scaleToFill" id="qrk-It-YIf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-walkthrough" translatesAutoresizingMaskIntoConstraints="NO" id="KA9-Hq-fcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="219"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="219" id="CNU-j0-wHb"/>
+                            <constraint firstAttribute="width" constant="115" id="P9s-7L-J01"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ionic-ios-arrow-back" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-9p-X4o">
+                        <rect key="frame" x="37" y="64" width="21" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="1Op-WZ-xWu"/>
+                            <constraint firstAttribute="height" constant="33" id="1zY-ko-J8R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELAMAT DATANG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYA-38-Uel">
+                        <rect key="frame" x="126" y="144" width="162" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" systemColor="labelColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan masukan data diri anda untuk memulai aplikasi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPt-mS-Cao">
+                        <rect key="frame" x="101.5" y="186" width="211" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="211" id="B7R-QM-8Pf"/>
+                            <constraint firstAttribute="height" constant="56" id="ZQg-8I-Ph7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-logo-green" translatesAutoresizingMaskIntoConstraints="NO" id="bhY-0U-C79">
+                        <rect key="frame" x="148" y="320" width="118" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="118" id="hwb-qF-HMg"/>
+                            <constraint firstAttribute="height" constant="84" id="tpw-Wt-l36"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email*" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50f-jc-XnN">
+                        <rect key="frame" x="58" y="428" width="298" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="298" id="gRs-UX-5aR"/>
+                            <constraint firstAttribute="height" constant="40" id="yBT-Vz-dV6"/>
+                        </constraints>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PnX-oz-xcq">
+                        <rect key="frame" x="58" y="492" width="298" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7VB-g5-ETL"/>
+                            <constraint firstAttribute="width" constant="298" id="AiO-ap-Htv"/>
+                        </constraints>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belum punya akun?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWk-mK-fAG">
+                        <rect key="frame" x="140" y="815" width="134" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.67450980392156867" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuB-25-KXJ">
+                        <rect key="frame" x="84.5" y="790" width="245.5" height="17"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Lupa login detail anda? Minta Bantuan">
+                                <attributes>
+                                    <font key="NSFont" metaFont="menu" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-Gg-rpG">
+                        <rect key="frame" x="92.5" y="699" width="229" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="229" id="TlZ-12-RCh"/>
+                            <constraint firstAttribute="height" constant="41" id="rAt-Lw-gJL"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Masuk" cornerStyle="medium">
+                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="baseBackgroundColor" red="1" green="0.72156862745098038" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="b58-Gj-T77"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="PnX-oz-xcq" firstAttribute="top" secondItem="50f-jc-XnN" secondAttribute="bottom" constant="24" id="54q-gL-8IB"/>
+                    <constraint firstItem="IPt-mS-Cao" firstAttribute="top" secondItem="SYA-38-Uel" secondAttribute="bottom" constant="20" id="5yl-nP-lLk"/>
+                    <constraint firstItem="50f-jc-XnN" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="7cf-7v-vol"/>
+                    <constraint firstItem="cyn-Gg-rpG" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="A6t-BL-okL"/>
+                    <constraint firstItem="bhY-0U-C79" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="CXQ-cu-DXU"/>
+                    <constraint firstItem="SYA-38-Uel" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="Gja-6k-DaO"/>
+                    <constraint firstItem="50f-jc-XnN" firstAttribute="centerY" secondItem="qrk-It-YIf" secondAttribute="centerY" id="HGX-Kf-vRY"/>
+                    <constraint firstItem="KA9-Hq-fcJ" firstAttribute="leading" secondItem="b58-Gj-T77" secondAttribute="leading" id="Pb8-eh-RfY"/>
+                    <constraint firstItem="NuB-25-KXJ" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="QKL-xF-hIV"/>
+                    <constraint firstItem="eLh-9p-X4o" firstAttribute="top" secondItem="b58-Gj-T77" secondAttribute="top" constant="20" id="Qm6-Uy-Vku"/>
+                    <constraint firstItem="eLh-9p-X4o" firstAttribute="leading" secondItem="b58-Gj-T77" secondAttribute="leading" constant="37" id="Ruv-fg-P22"/>
+                    <constraint firstItem="50f-jc-XnN" firstAttribute="top" secondItem="bhY-0U-C79" secondAttribute="bottom" constant="24" id="T45-Ot-3Pw"/>
+                    <constraint firstAttribute="bottom" secondItem="WWk-mK-fAG" secondAttribute="bottom" constant="64" id="ZnI-93-suO"/>
+                    <constraint firstItem="PnX-oz-xcq" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="by8-DI-dWS"/>
+                    <constraint firstItem="KA9-Hq-fcJ" firstAttribute="top" secondItem="qrk-It-YIf" secondAttribute="top" id="dSZ-Wj-haD"/>
+                    <constraint firstItem="IPt-mS-Cao" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="dYk-ax-nQc"/>
+                    <constraint firstItem="bhY-0U-C79" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="do6-eg-wvz"/>
+                    <constraint firstItem="bhY-0U-C79" firstAttribute="top" secondItem="IPt-mS-Cao" secondAttribute="bottom" constant="78" id="eJu-mM-9ZF"/>
+                    <constraint firstItem="NuB-25-KXJ" firstAttribute="top" secondItem="cyn-Gg-rpG" secondAttribute="bottom" constant="50" id="shk-NC-iEb"/>
+                    <constraint firstItem="WWk-mK-fAG" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="tWA-if-azw"/>
+                    <constraint firstItem="WWk-mK-fAG" firstAttribute="top" secondItem="NuB-25-KXJ" secondAttribute="bottom" constant="8" id="zyS-mv-0Vg"/>
+                </constraints>
+            </view>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="221.73913043478262" y="17.410714285714285"/>
+        </viewController>
+        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5yk-Xm-cBw">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="222" y="17"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="app-logo-green" width="216" height="156.5"/>
+        <image name="image-walkthrough" width="115" height="219"/>
+        <image name="ionic-ios-arrow-back" width="21" height="33"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
