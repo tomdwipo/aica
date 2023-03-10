@@ -12,19 +12,30 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var lblButtonCreateAccount: UILabel!
     
+    @IBOutlet weak var btnBack: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.setHidesBackButton(true, animated: true)
         
-        self.view.isUserInteractionEnabled = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(navigateToSignUpPage))
-        self.view.addGestureRecognizer(tap)
+        let tapLblCreateAccount = UITapGestureRecognizer(target: self, action: #selector(navigateToSignUpPage))
+        self.lblButtonCreateAccount.addGestureRecognizer(tapLblCreateAccount)
+        self.lblButtonCreateAccount.isUserInteractionEnabled = true
+        
+        
+        let tapBtnBack = UITapGestureRecognizer(target: self, action: #selector(navigateBack))
+        self.btnBack.addGestureRecognizer(tapBtnBack)
+        self.btnBack.isUserInteractionEnabled = true
     }
     
     @objc func navigateToSignUpPage() {
         let vc = SignUpViewController(nibName: "SignUpView", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func navigateBack() {
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

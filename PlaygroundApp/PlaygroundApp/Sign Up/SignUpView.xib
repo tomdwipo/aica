@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="PlaygroundApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="12r-Of-dvi" id="DTb-yb-AoZ"/>
+                <outlet property="lblEmail" destination="kTa-cz-uG6" id="0WB-XG-zRF"/>
+                <outlet property="lblName" destination="bR2-MT-hd4" id="CBD-sd-IQy"/>
+                <outlet property="lblPhone" destination="udU-Pe-gD0" id="CaZ-m8-cbA"/>
                 <outlet property="view" destination="aMV-zF-i0V" id="wj0-2g-1pQ"/>
             </connections>
         </placeholder>
@@ -53,7 +57,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nama*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-MT-hd4">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nama*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-MT-hd4">
                     <rect key="frame" x="54" y="326.33333333333331" width="320" height="41"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="41" id="ybR-dH-azT"/>
@@ -68,7 +72,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-cz-uG6">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTa-cz-uG6">
                     <rect key="frame" x="54" y="405.66666666666669" width="320" height="41"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="41" id="Xrs-0i-v88"/>
@@ -83,7 +87,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="No. Handphone*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udU-Pe-gD0">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No. Handphone*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udU-Pe-gD0">
                     <rect key="frame" x="54" y="485.66666666666669" width="320" height="41.000000000000057"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="41" id="MwZ-Ly-nNX"/>
@@ -98,7 +102,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBe-Fz-wOh">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBe-Fz-wOh">
                     <rect key="frame" x="54" y="565.66666666666663" width="320" height="41"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="41" id="70P-pP-Hqg"/>
@@ -126,6 +130,9 @@
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                         <color key="baseBackgroundColor" red="1" green="0.72156862749999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="btnRegisterAccount:" destination="-1" eventType="touchUpInside" id="wpJ-La-FXt"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="k3z-mu-whP"/>

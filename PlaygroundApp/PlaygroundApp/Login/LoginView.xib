@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="PlaygroundApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="eLh-9p-X4o" id="NNJ-iI-M8r"/>
                 <outlet property="lblButtonCreateAccount" destination="WWk-mK-fAG" id="jnr-zx-sAx"/>
                 <outlet property="view" destination="qrk-It-YIf" id="bWJ-Sj-r5T"/>
             </connections>
