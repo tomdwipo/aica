@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="PlaygroundApp" customModuleProvider="target">
             <connections>
                 <outlet property="lblButtonCreateAccount" destination="WWk-mK-fAG" id="jnr-zx-sAx"/>
+                <outlet property="textFieldEmail" destination="50f-jc-XnN" id="9cs-Xq-3Zv"/>
+                <outlet property="textFieldPassword" destination="PnX-oz-xcq" id="i6e-TD-uE2"/>
                 <outlet property="view" destination="qrk-It-YIf" id="bWJ-Sj-r5T"/>
             </connections>
         </placeholder>
@@ -49,7 +51,7 @@
                         <constraint firstAttribute="height" constant="84" id="tpw-Wt-l36"/>
                     </constraints>
                 </imageView>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email*" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50f-jc-XnN">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50f-jc-XnN">
                     <rect key="frame" x="58" y="428" width="298" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="298" id="gRs-UX-5aR"/>
@@ -59,7 +61,7 @@
                     <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password*" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PnX-oz-xcq">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PnX-oz-xcq">
                     <rect key="frame" x="58" y="492" width="298" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="7VB-g5-ETL"/>
@@ -98,6 +100,9 @@
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                         <color key="baseBackgroundColor" red="1" green="0.72156862745098038" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="btnSignIn:" destination="-1" eventType="touchUpInside" id="wuU-cj-3Ci"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="b58-Gj-T77"/>
