@@ -12,11 +12,10 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var btnBack: UIImageView!
     
-    @IBOutlet weak var lblName: UITextField!
-    @IBOutlet weak var lblEmail: UITextField!
-    @IBOutlet weak var lblPhone: UITextField!
-    @IBOutlet weak var lblPassword: UITextField!
-    
+    @IBOutlet weak var textFieldName: UITextField!
+    @IBOutlet weak var textFieldEmail: UITextField!
+    @IBOutlet weak var textFieldPhoneNumber: UITextField!
+    @IBOutlet weak var textFieldPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +34,11 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func btnRegisterAccount(_ sender: Any) {
-        let name = "Nama: \(lblName.text ?? "")"
-        let email = "Email: \(lblEmail.text ?? "")"
-        let phone = "Phone: \(lblPhone.text ?? "")"
-        let password = "Password: \(lblPassword.text ?? "")"
+        let name = "Nama: \(textFieldName.text ?? "")"
+        let email = "Email: \(textFieldEmail.text ?? "")"
+        let phone = "Phone: \(textFieldPhoneNumber.text ?? "")"
+        let password = "Password: \(textFieldPassword.text ?? "")"
+        
         print(name + "\n" + email + "\n" + phone + "\n" + password)
     }
 }
