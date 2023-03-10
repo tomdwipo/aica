@@ -13,6 +13,7 @@
                 <outlet property="btnBack" destination="12r-Of-dvi" id="DTb-yb-AoZ"/>
                 <outlet property="lblEmail" destination="kTa-cz-uG6" id="0WB-XG-zRF"/>
                 <outlet property="lblName" destination="bR2-MT-hd4" id="CBD-sd-IQy"/>
+                <outlet property="lblPassword" destination="DBe-Fz-wOh" id="j27-Zo-oWd"/>
                 <outlet property="lblPhone" destination="udU-Pe-gD0" id="CaZ-m8-cbA"/>
                 <outlet property="view" destination="aMV-zF-i0V" id="wj0-2g-1pQ"/>
             </connections>
