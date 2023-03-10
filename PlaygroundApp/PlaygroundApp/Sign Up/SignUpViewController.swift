@@ -10,7 +10,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    @IBOutlet weak var btnBack: UIImageView!
+//    @IBOutlet weak var btnBack: UIImageView!
     
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldEmail: UITextField!
@@ -20,17 +20,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        
-        let tap = UITapGestureRecognizer(target: self, action: #selector(navigateBack))
-        self.btnBack.addGestureRecognizer(tap)
-        self.btnBack.isUserInteractionEnabled = true
-        
-        
-    }
-    
-    @objc func navigateBack() {
-        self.navigationController?.popViewController(animated: true)
+        let backButton = UIBarButtonItem()
+        backButton.tintColor = UIColor.gray
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
     
     @IBAction func btnRegisterAccount(_ sender: Any) {

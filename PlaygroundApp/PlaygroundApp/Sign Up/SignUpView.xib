@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="PlaygroundApp" customModuleProvider="target">
             <connections>
-                <outlet property="btnBack" destination="12r-Of-dvi" id="DTb-yb-AoZ"/>
                 <outlet property="textFieldEmail" destination="kTa-cz-uG6" id="zwA-t3-Qkl"/>
                 <outlet property="textFieldName" destination="bR2-MT-hd4" id="1Sd-ie-H1n"/>
                 <outlet property="textFieldPassword" destination="DBe-Fz-wOh" id="tYm-gA-bk9"/>
@@ -25,13 +24,6 @@
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-walkthrough" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-HX-v75">
                     <rect key="frame" x="0.0" y="0.0" width="115" height="219"/>
-                </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ionic-ios-arrow-back" translatesAutoresizingMaskIntoConstraints="NO" id="12r-Of-dvi">
-                    <rect key="frame" x="37" y="71" width="21" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="33" id="W9x-rg-oPg"/>
-                        <constraint firstAttribute="width" constant="21" id="aWc-6a-csd"/>
-                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAFTAR AKUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-V4-Fi7">
                     <rect key="frame" x="151" y="134" width="126" height="21"/>
@@ -169,7 +161,6 @@
                 <constraint firstItem="UaG-gP-efF" firstAttribute="leading" secondItem="kTa-cz-uG6" secondAttribute="leading" id="kWb-cd-b7C"/>
                 <constraint firstItem="NbY-HX-v75" firstAttribute="top" secondItem="aMV-zF-i0V" secondAttribute="top" id="mSf-XO-oMD"/>
                 <constraint firstItem="d8H-o6-Phx" firstAttribute="top" secondItem="o1Y-ZG-1A0" secondAttribute="bottom" constant="36" id="mvu-uo-Qt1"/>
-                <constraint firstItem="12r-Of-dvi" firstAttribute="top" secondItem="k3z-mu-whP" secondAttribute="top" constant="27" id="nQa-xE-vHa"/>
                 <constraint firstItem="bR2-MT-hd4" firstAttribute="top" secondItem="uAn-mS-0F9" secondAttribute="bottom" constant="4" id="nhX-MG-Y3T"/>
                 <constraint firstItem="Hhc-V4-Fi7" firstAttribute="top" secondItem="k3z-mu-whP" secondAttribute="top" constant="90" id="ryU-bc-Ht9"/>
                 <constraint firstItem="kTa-cz-uG6" firstAttribute="leading" secondItem="k3z-mu-whP" secondAttribute="leading" constant="54" id="sDF-7a-9MQ"/>
@@ -178,7 +169,6 @@
                 <constraint firstItem="DBe-Fz-wOh" firstAttribute="top" secondItem="fBc-xt-oOD" secondAttribute="bottom" constant="4" id="w2o-lO-osb"/>
                 <constraint firstItem="k3z-mu-whP" firstAttribute="trailing" secondItem="kTa-cz-uG6" secondAttribute="trailing" constant="54" id="xnA-Lx-Huf"/>
                 <constraint firstItem="5hY-J3-qGQ" firstAttribute="top" secondItem="tpt-Et-wr6" secondAttribute="bottom" constant="26" id="yWQ-Dz-F6m"/>
-                <constraint firstItem="12r-Of-dvi" firstAttribute="leading" secondItem="k3z-mu-whP" secondAttribute="leading" constant="37" id="zsI-MC-zbP"/>
             </constraints>
             <point key="canvasLocation" x="-306" y="-643"/>
         </view>
@@ -186,7 +176,6 @@
     <resources>
         <image name="app-logo-green" width="216" height="156.66667175292969"/>
         <image name="image-walkthrough" width="115" height="219"/>
-        <image name="ionic-ios-arrow-back" width="21" height="33"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
