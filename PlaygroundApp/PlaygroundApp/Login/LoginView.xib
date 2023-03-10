@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="PlaygroundApp" customModuleProvider="target">
             <connections>
-                <outlet property="btnBack" destination="eLh-9p-X4o" id="NNJ-iI-M8r"/>
                 <outlet property="lblButtonCreateAccount" destination="WWk-mK-fAG" id="jnr-zx-sAx"/>
                 <outlet property="view" destination="qrk-It-YIf" id="bWJ-Sj-r5T"/>
             </connections>
@@ -25,13 +24,6 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="219" id="CNU-j0-wHb"/>
                         <constraint firstAttribute="width" constant="115" id="P9s-7L-J01"/>
-                    </constraints>
-                </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ionic-ios-arrow-back" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-9p-X4o">
-                    <rect key="frame" x="37" y="64" width="21" height="33"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="21" id="1Op-WZ-xWu"/>
-                        <constraint firstAttribute="height" constant="33" id="1zY-ko-J8R"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELAMAT DATANG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYA-38-Uel">
@@ -120,8 +112,6 @@
                 <constraint firstItem="50f-jc-XnN" firstAttribute="centerY" secondItem="qrk-It-YIf" secondAttribute="centerY" id="HGX-Kf-vRY"/>
                 <constraint firstItem="KA9-Hq-fcJ" firstAttribute="leading" secondItem="b58-Gj-T77" secondAttribute="leading" id="Pb8-eh-RfY"/>
                 <constraint firstItem="NuB-25-KXJ" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="QKL-xF-hIV"/>
-                <constraint firstItem="eLh-9p-X4o" firstAttribute="top" secondItem="b58-Gj-T77" secondAttribute="top" constant="20" id="Qm6-Uy-Vku"/>
-                <constraint firstItem="eLh-9p-X4o" firstAttribute="leading" secondItem="b58-Gj-T77" secondAttribute="leading" constant="37" id="Ruv-fg-P22"/>
                 <constraint firstItem="50f-jc-XnN" firstAttribute="top" secondItem="bhY-0U-C79" secondAttribute="bottom" constant="24" id="T45-Ot-3Pw"/>
                 <constraint firstAttribute="bottom" secondItem="WWk-mK-fAG" secondAttribute="bottom" constant="64" id="ZnI-93-suO"/>
                 <constraint firstItem="PnX-oz-xcq" firstAttribute="centerX" secondItem="qrk-It-YIf" secondAttribute="centerX" id="by8-DI-dWS"/>
@@ -139,7 +129,6 @@
     <resources>
         <image name="app-logo-green" width="216" height="156.5"/>
         <image name="image-walkthrough" width="115" height="219"/>
-        <image name="ionic-ios-arrow-back" width="21" height="33"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
