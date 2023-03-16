@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewCell" customModule="PlaygroundApp" customModuleProvider="target">
+            <connections>
+                <outlet property="imageMenu" destination="fic-hW-37u" id="ctT-Du-S0s"/>
+                <outlet property="labelMenuPrice" destination="iP5-dz-O2e" id="oMs-Uh-bf9"/>
+                <outlet property="labelMenuRating" destination="2t3-rC-jCm" id="5rL-4h-bK7"/>
+                <outlet property="labelMenuTitle" destination="uyn-WW-QfM" id="ibD-dN-Cg9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCellI" rowHeight="104" id="KGk-i7-Jjw" customClass="MenuViewCell" customModule="PlaygroundApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="americano" translatesAutoresizingMaskIntoConstraints="NO" id="fic-hW-37u">
+                        <rect key="frame" x="16" y="8" width="82" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="84" id="NvE-PR-hyd"/>
+                            <constraint firstAttribute="width" constant="82" id="UTs-nh-0Xo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Americano" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyn-WW-QfM">
+                        <rect key="frame" x="114" y="8" width="286" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWr-zj-t8g">
+                        <rect key="frame" x="114" y="29" width="29" height="12"/>
+                        <attributedString key="attributedText">
+                            <fragment content="rating">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="10"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t3-rC-jCm">
+                        <rect key="frame" x="147" y="29" width="7" height="12"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp.18.000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP5-dz-O2e">
+                        <rect key="frame" x="114" y="77" width="286" height="19.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2t3-rC-jCm" firstAttribute="leading" secondItem="UWr-zj-t8g" secondAttribute="trailing" constant="4" id="00c-3v-Q3n"/>
+                    <constraint firstItem="iP5-dz-O2e" firstAttribute="top" secondItem="UWr-zj-t8g" secondAttribute="bottom" constant="36" id="9Ys-g6-XaY"/>
+                    <constraint firstAttribute="trailing" secondItem="iP5-dz-O2e" secondAttribute="trailing" constant="16" id="Itm-Nh-B5k"/>
+                    <constraint firstAttribute="trailing" secondItem="uyn-WW-QfM" secondAttribute="trailing" constant="16" id="Jwn-YM-Q6V"/>
+                    <constraint firstAttribute="bottom" secondItem="iP5-dz-O2e" secondAttribute="bottom" constant="8" id="KV7-e2-nJF"/>
+                    <constraint firstItem="fic-hW-37u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="QxT-DI-hyz"/>
+                    <constraint firstAttribute="bottom" secondItem="fic-hW-37u" secondAttribute="bottom" constant="8" id="REu-KA-CJK"/>
+                    <constraint firstItem="uyn-WW-QfM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ZEm-Le-T3Y"/>
+                    <constraint firstItem="UWr-zj-t8g" firstAttribute="top" secondItem="uyn-WW-QfM" secondAttribute="bottom" constant="4" id="ZyR-pq-biF"/>
+                    <constraint firstItem="iP5-dz-O2e" firstAttribute="leading" secondItem="fic-hW-37u" secondAttribute="trailing" constant="16" id="awx-Z6-5Au"/>
+                    <constraint firstItem="UWr-zj-t8g" firstAttribute="leading" secondItem="fic-hW-37u" secondAttribute="trailing" constant="16" id="bRt-2B-6Qz"/>
+                    <constraint firstItem="uyn-WW-QfM" firstAttribute="leading" secondItem="fic-hW-37u" secondAttribute="trailing" constant="16" id="hLL-P2-OER"/>
+                    <constraint firstItem="fic-hW-37u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="t0n-pz-kih"/>
+                    <constraint firstItem="2t3-rC-jCm" firstAttribute="top" secondItem="uyn-WW-QfM" secondAttribute="bottom" constant="4" id="wiy-tM-79k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="146.37681159420291" y="3.3482142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="americano" width="82" height="88"/>
+    </resources>
+</document>
