@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 //        modalPresentationStyle = .fullScreen
 //        present(vc, animated: true)
         
-        let vc = MenuViewController(nibName: "MenuViewController", bundle: nil)
+        let vc = MenuViewController(nibName: "MenuView", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
