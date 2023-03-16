@@ -29,7 +29,7 @@ class MenuViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         table.dataSource = self
-        table.register(UINib(nibName: "MenuViewController", bundle: nil), forCellReuseIdentifier: "MenuCell")
+        table.register(UINib(nibName: "MenuViewCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
