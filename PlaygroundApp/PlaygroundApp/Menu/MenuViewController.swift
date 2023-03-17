@@ -32,10 +32,10 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         
         table.dataSource = self
-        table.register(UINib(nibName: "MenuViewCell", bundle: nil), forCellReuseIdentifier: "MenuCell")
+        table.register(UINib(nibName: String(describing: MenuViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MenuViewCell.self))
         
         collection.dataSource = self
-        collection.register(UINib(nibName: "MenuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MenuCollectionCell")
+        collection.register(UINib(nibName: String(describing: MenuCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: MenuCollectionViewCell.self))
     }
 }
 
@@ -47,7 +47,7 @@ extension MenuViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let menu = data[indexPath.row]
         
-        let cell = table.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuViewCell
+        let cell = table.dequeueReusableCell(withIdentifier: String(describing: MenuViewCell.self), for: indexPath) as! MenuViewCell
         cell.imageMenu.image = UIImage(named: menu.image)
         cell.labelMenuTitle.text = menu.title
         cell.labelMenuRating.text = menu.rating
@@ -68,7 +68,7 @@ extension MenuViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCollectionCell", for: indexPath) as! MenuCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MenuCollectionViewCell.self), for: indexPath) as! MenuCollectionViewCell
         cell.labelCategory.text = categoryList[indexPath.row]
         return cell
     }

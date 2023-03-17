@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cr8-Au-tOZ">
-                    <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                    <rect key="frame" x="0.0" y="90" width="414" height="772"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LQi-hW-DUF">
@@ -41,7 +41,7 @@
             <viewLayoutGuide key="safeArea" id="jwP-bE-yiP"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="cr8-Au-tOZ" firstAttribute="top" secondItem="LQi-hW-DUF" secondAttribute="bottom" constant="8" id="0zq-ho-vY2"/>
+                <constraint firstItem="cr8-Au-tOZ" firstAttribute="top" secondItem="LQi-hW-DUF" secondAttribute="bottom" id="0zq-ho-vY2"/>
                 <constraint firstItem="cr8-Au-tOZ" firstAttribute="trailing" secondItem="jwP-bE-yiP" secondAttribute="trailing" id="7WQ-2l-JeM"/>
                 <constraint firstItem="LQi-hW-DUF" firstAttribute="leading" secondItem="jwP-bE-yiP" secondAttribute="leading" id="DAb-rL-Jjd"/>
                 <constraint firstItem="jwP-bE-yiP" firstAttribute="trailing" secondItem="LQi-hW-DUF" secondAttribute="trailing" id="QgB-Ug-vHh"/>
