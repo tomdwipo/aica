@@ -35,6 +35,6 @@ class LoginViewController: UIViewController {
         let email = "email: \(textFieldEmail.text ?? "")"
         let password = "password: \(textFieldPassword.text ?? "")"
         
-        print(email + "\n" + password)
+        debugPrint(email + "\n" + password)
     }
 }
